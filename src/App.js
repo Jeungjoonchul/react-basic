@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import MyList from './MyList';
+import MyComponent from './MyComponent';
+import MyForm from './MyForm'
 function App() {
+  // 사용자를 인증하고 사용자명을 가져온다.
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyForm/>
     </div>
   );
 }
